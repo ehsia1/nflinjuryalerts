@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "nflinjuryalerts",
+  "version": "0.0.0.1",
+  "background": {
+    "scripts": [
+      "event.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "NFL Injury Alerts",
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": [],
+      "js": ["content.js"]
+    }
+  ]
+}
