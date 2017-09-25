@@ -3,13 +3,12 @@ const path = require('path');
 module.exports = {
 
   entry: [
-    './src/index.js'
+    './src/app'
   ],
 
   output: {
-    filename: 'content.js',
-    path: path.join(__dirname, '../', 'build'),
-    publicPath: '/'
+    filename: 'bundle.js',
+    path: path.join(__dirname, './build'),
   },
 
   resolve: {
